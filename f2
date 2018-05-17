@@ -1,2 +1,165 @@
-hsdfhsdhf
-sdhfhsdf
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch1)
+
+$ git branch branch2
+
+　
+
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch1)
+
+$ git checkout branch2
+
+Switched to branch 'branch2'
+
+　
+
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch2)
+
+$ git commit -m "branch2 commit"
+
+On branch branch2
+
+nothing to commit, working tree clean
+
+　
+
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch2)
+
+$ git push origin branch2
+
+Total 0 (delta 0), reused 0 (delta 0)
+
+To https://github.com/Anandchinnu/testing.git
+
+ * [new branch]      branch2 -> branch2
+
+　
+
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch2)
+
+$ cat > f5
+
+sdfsdfsdfsdfsd
+
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch2)
+
+$ git add .
+
+　
+
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch2)
+
+$ git commit
+
+hint: Waiting for your editor to close the file...       0 [sig] bash 5460! sigpacket::process: Suppressing signal 18 to win32 process (pid 3272)
+
+Aborting commit due to empty commit message.
+
+　
+
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch2)
+
+$ git commit -m "file saved f5"
+
+[branch2 c72d941] file saved f5
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 f5
+
+　
+
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch2)
+
+$ git push origin branch2
+
+Counting objects: 3, done.
+
+Delta compression using up to 4 threads.
+
+Compressing objects: 100% (2/2), done.
+
+Writing objects: 100% (3/3), 341 bytes | 341.00 KiB/s, done.
+
+Total 3 (delta 0), reused 0 (delta 0)
+
+To https://github.com/Anandchinnu/testing.git
+
+   c06eadf..c72d941  branch2 -> branch2
+
+　
+
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch2)
+
+$ git merge branch2 branch1
+
+Already up to date.
+
+　
+
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch2)
+
+$ git merge branch1 branch2
+
+Already up to date.
+
+　
+
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch2)
+
+$ git checkout branch1
+
+Switched to branch 'branch1'
+
+　
+
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch1)
+
+$ git merge branch1 branch2
+
+Updating c06eadf..c72d941
+
+Fast-forward
+
+ f5 | 1 +
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 f5
+
+　
+
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch1)
+
+$ git commit -m "branch2 merged to branch1 changes"
+
+On branch branch1
+
+nothing to commit, working tree clean
+
+　
+
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch1)
+
+$ git add .
+
+　
+
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch1)
+
+$ git commit -m "branch2 merged to branch1 changes"
+
+On branch branch1
+
+nothing to commit, working tree clean
+
+　
+
+SYNADY1585+syntel@SYNADY1585 MINGW64 ~/testing (branch1)
+
+$ git push origin branch1
+
+Total 0 (delta 0), reused 0 (delta 0)
+
+To https://github.com/Anandchinnu/testing.git
+
+   c06eadf..c72d941  branch1 -> branch1
